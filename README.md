@@ -11,10 +11,39 @@
 ## Usage:
 
 1. Add `_Language_.tsv` into Bundle
+```tsv
+hi	hello
+bye	bye bye
+```
 2. Add case in `enum Language`, make sure system code is related.
-3. Give `localizedKey` in Interface builder for each UILabel, UIButton, UITextfield
-4. Change `LocalizedManager.shared.change(setting:)` in proper way
+```swift 
+enum Language {
+	case en = "_SYSTEM_LANGUAGE_CODE_"
+	case ch = "zh-Hant"
+}
+```
+3. Give the file name to the `Language` case
+```swift
+extension Language {
+	var fileName:String {
+		switch self {
+			case .en: return "en"
+			case .ch: return "ch"
+		}
+	}
+}
+```
+4. Give `localizedKey` in Interface builder for each UILabel, UIButton, UITextfield
+```
+<userDefinedRuntimeAttributes>
+	<userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="hi"/>
+</userDefinedRuntimeAttributes>
+```
+5. Change `LocalizedManager.shared.change(setting:)` in proper way
+```swift
+	LocalizedManager.shared.change(setting: self.language.setting)
+```
 
 ## todo:
 
-* [ ]: to SPM
+- [ ] To SPM
