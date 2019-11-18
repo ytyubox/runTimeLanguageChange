@@ -24,16 +24,8 @@
                                             <action selector="didchangeSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="2ys-Cb-yVG"/>
                                         </connections>
                                     </switch>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Xq-sz-eaA">
-                                        <rect key="frame" x="8.5" y="41" width="32" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKeyForPlaceholder" value="no"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd9-eL-thj">
-                                        <rect key="frame" x="3.5" y="82" width="42" height="31"/>
+                                        <rect key="frame" x="3.5" y="41" width="42" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -42,13 +34,20 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHo-xG-HfB">
-                                        <rect key="frame" x="1.5" y="123" width="46" height="31"/>
+                                        <rect key="frame" x="1.5" y="82" width="46" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="bye"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localKeyForSelected" value="no"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="no"/>
                                         </userDefinedRuntimeAttributes>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Xq-sz-eaA">
+                                        <rect key="frame" x="8.5" y="123" width="32" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="bye"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
                                 </subviews>
                             </stackView>
                         </subviews>

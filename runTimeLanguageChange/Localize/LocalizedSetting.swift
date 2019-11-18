@@ -47,7 +47,7 @@ struct LocalizedSetting:LikeLocalizedSetting {
         self.fileName = fileName
     }
     private static func getDic(fileName:String) -> [String:String] {
-        let s = BundleFile(fileName: fileName,fileType: "txt").getfile()
+        let s = BundleFile(fileName: fileName,fileType: "tsv").getfile()
         let lineList = s.split(separator: "\n")
         var result = [String:String](minimumCapacity: lineList.count)
         for line in lineList {
